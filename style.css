@@ -1,0 +1,119 @@
+/*
+    Colors  
+
+    #5D5C61 - dark brown
+    #928E93 - light brown
+    #7395AE - light blue
+    #557A95 - dark blue
+    #B1A296 - sand
+*/
+
+html {
+  background-color: #b1a296;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.car-container {
+  border: 10px solid black;
+  margin: 50px;
+  text-align: center;
+  background-color: wheat;
+}
+
+.custom-paragraph {
+  width: 250px;
+  border: 5px dashed red;
+  margin: 20px auto;
+  padding: 20px 0;
+  background-color: lavenderblush;
+}
+
+.car-type-title {
+  color: #7395ae;
+}
+
+.squared-list {
+  list-style-type: square;
+}
+
+.text-center {
+  text-align: center;
+}
+
+nav {
+  background-color: #5d5c61;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav a {
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav a:hover {
+  padding: 20px 10px;
+  background-color: #9a99a1;
+}
+
+nav span {
+  color: #7395ae;
+  margin-right: 100px;
+  font-size: 25px;
+}
+
+.paieska {
+  margin-left: 100px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #928e93;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+footer h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.car-container td {
+  border: 2px solid black;
+}
+
+.car-container td:only-child,
+.car-container tr:first-child {
+  border: none;
+}
+
+.car-container table:first-child {
+  width: 100%;
+  border-spacing: 20px;
+}
+
+.price-list,
+.price-list tr,
+.price-list td {
+  padding: 10px 0;
+  border: none;
+  border-spacing: 10px;
+}
+
+.price-list th:first-child {
+  width: 10%;
+}
+
+.reservation-form {
+  text-align: center;
+  padding: 50px;
+}

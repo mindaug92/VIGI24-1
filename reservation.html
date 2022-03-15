@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Automobiliu nuoma</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span id="pavadinimas">UAB "OroAuto"</span>
+        <a href="http://127.0.0.1:5500/reservation.html">Rezervacija</a>
+        <a href="http://127.0.0.1:5500/index.html">Automobiliai</a>
+        <a href="#">Apie mus</a>
+        <a href="#">Kontaktai</a>
+        <span class="paieska">
+          <input type="search" name="search" />
+          <button>Paieska</button>
+        </span>
+      </nav>
+    </header>
+    <main>
+      <div class="reservation-form">
+        <form>
+          <table>
+            <tr>
+              <td>
+                <label for="name">Vardas</label>
+              </td>
+              <td>
+                <input type="text" name="name" id="name" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="lastname">Pavarde</label>
+              </td>
+              <td>
+                <input type="text" name="lastname" id="lastname" required />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="mail">El. pastas</label>
+              </td>
+              <td>
+                <input
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  placeholder="vardas@pastas.lt"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="selected-car">Norimas automobilis</label>
+              </td>
+              <td>
+                <select name="selected-car" id="selected-car">
+                  <optgroup label="Lengvieji automobiliai">
+                    <option value="car1">Automobilis 1</option>
+                    <option value="car2">Automobilis 2</option>
+                    <option value="car3">Automobilis 3</option>
+                  </optgroup>
+                  <optgroup label="Kabrioletai">
+                    <option value="cabrio1">Automobilis 1</option>
+                    <option value="cabrio2">Automobilis 2</option>
+                    <option value="cabrio3">Automobilis 3</option>
+                  </optgroup>
+                  <optgroup label="Kemperiai">
+                    <option value="camper1">Automobilis 1</option>
+                    <option value="camper2">Automobilis 2</option>
+                    <option value="camper3" selected>Automobilis 3</option>
+                  </optgroup>
+                  <optgroup label="Sunkvezimiai">
+                    <option value="truck1">Automobilis 1</option>
+                    <option value="truck2">Automobilis 2</option>
+                    <option value="truck3">Automobilis 3</option>
+                  </optgroup>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="nav-required">Navigacija</label>
+              </td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="nav-required"
+                  id="nav-required"
+                  value="nav-required"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="file">Spalva</label>
+              </td>
+              <td>
+                <input type="file" name="file" id="file" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="days">Dienu skaicius</label>
+              </td>
+              <td>
+                <input type="number" name="days" id="days" max="20" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="days">Dienu skaicius</label>
+              </td>
+              <td>
+                <input
+                  type="range"
+                  name="days"
+                  id="days"
+                  min="1"
+                  max="20"
+                  step="5"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="days">Progresas</label>
+              </td>
+              <td><progress max="100" value="75">75/100</progress></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dayFrom">Data nuo</label>
+              </td>
+              <td>
+                <input type="week" name="dayFrom" id="dayFrom" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dayTo">Data iki</label>
+              </td>
+              <td>
+                <input type="week" name="dayTo" id="dayTo" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="reason">Nuomos priezastis?</label>
+              </td>
+              <td>
+                <textarea
+                  name="reason"
+                  id="reason"
+                  style="resize: none"
+                  cols="18"
+                  rows="5"
+                  placeholder="Irasykite priezasti, del ko norite issinuomoti automobili"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button type="reset">Atsaukti</button>
+              </td>
+              <td>
+                <button type="submit">Patvirtinti</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <h3>Naudingos nuorodos</h3>
+      <ul class="squared-list">
+        <li>
+          Imone
+          <ul>
+            <li><a href="#">Apie mus</a></li>
+            <li><a href="#">Karjera</a></li>
+            <li><a href="#">Kaip mes dirbame</a></li>
+          </ul>
+        </li>
+        <li>
+          Imone
+          <ul>
+            <li><a href="#">Apie mus</a></li>
+            <li><a href="#">Karjera</a></li>
+            <li><a href="#">Kaip mes dirbame</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="squared-list">
+        <li>
+          Imone
+          <ul>
+            <li><a href="#">Apie mus</a></li>
+            <li><a href="#">Karjera</a></li>
+            <li><a href="#">Kaip mes dirbame</a></li>
+          </ul>
+        </li>
+        <li>
+          Imone
+          <ul>
+            <li><a href="#">Apie mus</a></li>
+            <li><a href="#">Karjera</a></li>
+            <li><a href="#">Kaip mes dirbame</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="squared-list">
+        <li>
+          Imone
+          <ul>
+            <li><a href="#">Apie mus</a></li>
+            <li><a href="#">Karjera</a></li>
+            <li><a href="#">Kaip mes dirbame</a></li>
+          </ul>
+        </li>
+        <li>
+          Imone
+          <ul>
+            <li><a href="#">Apie mus</a></li>
+            <li><a href="#">Karjera</a></li>
+            <li><a href="#">Kaip mes dirbame</a></li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
