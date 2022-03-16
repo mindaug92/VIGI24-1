@@ -1,0 +1,25 @@
+.bg-green {
+  background-color: green;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.block {
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem;
+}
+
+.container {
+  background-color: yellow;
+  padding: 1rem;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: row;
+}
