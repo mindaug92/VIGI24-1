@@ -49,6 +49,22 @@ nav {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+nav .logo {
+  flex-basis: 15%;
+  text-align: right;
+}
+
+nav .search {
+  text-align: left;
+  flex-basis: 20%;
+}
+
+nav .nav-items {
+  flex-basis: 65%;
 }
 
 nav a {
@@ -65,13 +81,16 @@ nav a:hover {
 
 nav span {
   color: #7395ae;
-  margin-right: 100px;
   font-size: 25px;
 }
 
-.paieska {
-  margin-left: 100px;
-  font-size: 20px;
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  margin: 5em auto;
+  background-color: wheat;
+  border: 1px;
 }
 
 footer {
@@ -116,4 +135,50 @@ footer h3 {
 .reservation-form {
   text-align: center;
   padding: 50px;
+  background-color: wheat;
+  border: 0.5em solid black;
+}
+
+.form-item {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.form-item :first-child {
+  text-align: right;
+  width: 100%;
+}
+
+.form-item :last-child {
+  text-align: left;
+  width: 100%;
+}
+
+.form-item label {
+  width: 100%;
+  text-align: right;
+  margin-right: 0.5rem;
+}
+
+.form-item input {
+  box-sizing: border-box;
+}
+.form-item input,
+.form-item select,
+.form-item textarea {
+  width: 100%;
+}
+
+.form-actions {
+  margin-top: 1em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-actions :first-child {
+  margin-right: 1em;
+}
+
+.form-actions button {
+  padding: 0.5em;
 }
