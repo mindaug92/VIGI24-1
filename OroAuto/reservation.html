@@ -25,7 +25,7 @@
           <a href="#">Kontaktai</a>
         </div>
         <div class="search">
-          <input type="text" name="paieska" />
+          <input type="search" name="paieska" />
           <button>Paieska</button>
         </div>
       </nav>
@@ -33,12 +33,13 @@
     <main>
       <form>
         <div class="reservation-form">
+          <h1>Rezervacijos forma</h1>
           <div class="form-item">
             <div>
               <label for="name">Vardas</label>
             </div>
             <div>
-              <input type="text" name="name" id="name" />
+              <input type="text" name="name" id="name" required />
             </div>
           </div>
           <div class="form-item">
@@ -51,10 +52,35 @@
           </div>
           <div class="form-item">
             <div>
+              <label for="personalCode">Asmens kodas</label>
+            </div>
+            <div>
+              <input
+                type="number"
+                name="personalCode"
+                id="personalCode"
+                max="99999999999"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-item">
+            <div>
+              <label for="passportPhoto">Paso nuotrauka</label>
+            </div>
+            <div>
+              <input type="file" name="passportPhoto" id="passportPhoto" />
+            </div>
+          </div>
+          <div class="form-item">
+            <div>
               <label for="selected-car">Norimas automobilis</label>
             </div>
             <div>
-              <select name="selected-car" id="selected-car">
+              <select name="selected-car" id="selected-car" required>
+                <option disabled selected value>
+                  --- Pasirinkite automobili ---
+                </option>
                 <optgroup label="Lengvieji automobiliai">
                   <option value="car1">Automobilis 1</option>
                   <option value="car2">Automobilis 2</option>
@@ -68,7 +94,7 @@
                 <optgroup label="Kemperiai">
                   <option value="camper1">Automobilis 1</option>
                   <option value="camper2">Automobilis 2</option>
-                  <option value="camper3" selected>Automobilis 3</option>
+                  <option value="camper3">Automobilis 3</option>
                 </optgroup>
                 <optgroup label="Sunkvezimiai">
                   <option value="truck1">Automobilis 1</option>
@@ -80,23 +106,65 @@
           </div>
           <div class="form-item">
             <div>
-              <label for="nav-required">Navigacija</label>
+              <label for="additional-gadgets">Papildoma iranga</label>
             </div>
             <div>
-              <input
-                type="checkbox"
-                name="nav-required"
-                id="nav-required"
-                value="nav-required"
-              />
-            </div>
-          </div>
-          <div class="form-item">
-            <div>
-              <label for="days">Dienu skaicius</label>
-            </div>
-            <div>
-              <input type="number" name="days" id="days" max="20" />
+              <div class="additional-gadgets">
+                <div class="additional-item">
+                  <label for="item-1">Iranga 1</label>
+                  <input
+                    type="checkbox"
+                    name="item-1"
+                    id="item-1"
+                    value="item-1"
+                  />
+                </div>
+                <div class="additional-item">
+                  <label for="item-2">Iranga 2</label>
+                  <input
+                    type="checkbox"
+                    name="item-2"
+                    id="item-2"
+                    value="item-2"
+                  />
+                </div>
+                <div class="additional-item">
+                  <label for="item-3">Iranga 3</label>
+                  <input
+                    type="checkbox"
+                    name="item-3"
+                    id="item-3"
+                    value="item-3"
+                  />
+                </div>
+                <div class="additional-item">
+                  <label for="item-4">Iranga 4</label>
+                  <input
+                    type="checkbox"
+                    name="item-4"
+                    id="item-4"
+                    value="item-4"
+                  />
+                </div>
+                <div class="additional-item">
+                  <label for="item-5">Iranga 5</label>
+                  <input
+                    type="checkbox"
+                    name="item-5"
+                    id="item-5"
+                    value="item-5"
+                  />
+                </div>
+                <div class="additional-item">
+                  <label for="item-6">Iranga 6</label>
+                  <input
+                    type="checkbox"
+                    name="item-6"
+                    id="item-6"
+                    value="item-6"
+                  />
+                </div>
+              </div>
             </div>
           </div>
           <div class="form-item">
@@ -108,6 +176,7 @@
                 type="range"
                 name="days"
                 id="days"
+                value="1"
                 min="1"
                 max="20"
                 step="5"
@@ -116,18 +185,15 @@
           </div>
           <div class="form-item">
             <div>
-              <label for="days">Progresas</label>
-            </div>
-            <div>
-              <progress max="100" value="75">75/100</progress>
-            </div>
-          </div>
-          <div class="form-item">
-            <div>
               <label for="dayFrom">Data nuo</label>
             </div>
             <div>
-              <input type="datetime-local" name="dayFrom" id="dayFrom" />
+              <input
+                type="datetime-local"
+                name="dayFrom"
+                id="dayFrom"
+                required
+              />
             </div>
           </div>
           <div class="form-item">
@@ -135,23 +201,32 @@
               <label for="dayTo">Data iki</label>
             </div>
             <div>
-              <input type="datetime-local" name="dayTo" id="dayTo" />
+              <input type="datetime-local" name="dayTo" id="dayTo" required />
             </div>
           </div>
           <div class="form-item">
-            <label for="reason">Papildoma informacija:</label>
-            <textarea
-              name="reason"
-              id="reason"
-              style="resize: none"
-              cols="18"
-              rows="5"
-              placeholder="Irasykite papildoma informacija, kuria mes turetumeme zinoti"
-            ></textarea>
+            <div>
+              <label for="reason">Papildoma informacija:</label>
+            </div>
+            <div>
+              <textarea
+                name="reason"
+                id="reason"
+                style="resize: none"
+                cols="18"
+                rows="5"
+                placeholder="Irasykite papildoma informacija, kuria mes turetumeme zinoti"
+              ></textarea>
+            </div>
           </div>
+
           <div class="form-actions">
-            <button type="reset">Atsaukti</button>
-            <button type="submit">Patvirtinti</button>
+            <button type="reset">Isvalyti</button>
+            <button type="submit">Testi</button>
+          </div>
+          <div class="form-progress">
+            <progress max="5" value="1">1/5</progress>
+            <div>Step 1 out of 5</div>
           </div>
         </div>
       </form>
