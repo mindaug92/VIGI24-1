@@ -1,0 +1,75 @@
+body {
+  border: 0.75rem solid black;
+  font-family: Liberation Sans, sans-serif;
+  width: 60%;
+  margin: 2rem 0 0 2rem;
+}
+
+header {
+  border-bottom: 0.75rem solid black;
+}
+
+main {
+  display: flex;
+  min-height: 30rem;
+}
+
+section {
+  flex: 4;
+  background-color: rgb(255, 204, 204);
+  padding: 0.5em;
+}
+
+section p,
+section h2 {
+  margin: 0;
+}
+
+section p {
+  font-size: 1.5rem;
+}
+
+section h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 7rem;
+}
+
+aside {
+  flex: 1;
+  border-right: 0.75rem solid black;
+  font-size: 2rem;
+}
+
+.menu .title {
+  text-align: center;
+}
+
+.menu .menu-item {
+  text-align: left;
+}
+
+.menu,
+.ad {
+  background-color: rgb(204, 153, 204);
+  padding: 0.25em;
+}
+
+.ad {
+  flex: 1;
+  border-left: 0.75rem solid black;
+  font-size: 8rem;
+}
+
+header h1,
+footer h1 {
+  margin: 0;
+  font-size: 8rem;
+  font-weight: normal;
+  background-color: rgb(131, 202, 255);
+  text-align: center;
+}
+
+footer {
+  border-top: 0.75rem solid black;
+}
