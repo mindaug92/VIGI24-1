@@ -1,0 +1,101 @@
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  margin: 5em auto;
+  background-color: wheat;
+  text-align: center;
+  padding: 50px;
+  border: 0.5em solid black;
+}
+
+.form-item {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.form-item div:first-child {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.form-item div:last-child {
+  text-align: left;
+  width: 100%;
+}
+
+.form-item input,
+.form-item select,
+.form-item textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.form-actions {
+  margin-top: 1em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-actions :first-child {
+  margin-right: 1em;
+}
+
+.form-actions button {
+  text-transform: uppercase;
+  padding: 0.5em;
+}
+
+.form-item div.additional-gadgets {
+  display: flex;
+  margin-right: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.additional-item {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.form-item div.additional-item {
+  text-align: center;
+  align-items: center;
+  width: 5rem;
+  height: 3rem;
+  margin: 0.2rem;
+}
+
+.form-item div.additional-item:hover {
+  background-color: #85747434;
+  cursor: pointer;
+}
+
+.additional-item label {
+  width: 100%;
+  cursor: pointer;
+}
+
+.additional-item input[type="checkbox"] {
+  width: auto;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.form-progress div {
+  text-align: right;
+}
+
+.form-progress progress {
+  margin-top: 2em;
+  width: 100%;
+}
+
+.reservation-form h1 {
+  margin: 0 0 20px 0;
+}
