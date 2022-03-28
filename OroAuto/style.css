@@ -24,7 +24,8 @@ h1 {
 }
 
 .custom-paragraph {
-  width: 250px;
+  max-width: 300px;
+  width: 100%;
   border: 5px dashed red;
   margin: 20px auto;
   padding: 20px 0;
@@ -228,4 +229,10 @@ footer h3 {
 
 .reservation-form h1 {
   margin: 0 0 20px 0;
+}
+
+img {
+  width: 400px;
+  /* max-width: 400px; */
+  /* width: 100%; */
 }
