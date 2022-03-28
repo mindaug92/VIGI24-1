@@ -1,0 +1,16 @@
+/* 
+Ypač maži įrenginiai (telefonai, 600 pikselių ir žemesni) 
+@media only screen and (max-width: 600px)
+
+Maži įrenginiai (planšetiniai kompiuteriai ir dideli telefonai, 600 pikselių ir daugiau)
+@media only screen and (min-width: 600px)
+
+Vidutiniai įrenginiai (kraštovaizdžio planšetiniai kompiuteriai, 768 pikselių ir didesni)
+@media only screen and (min-width: 768px)
+
+Dideli įrenginiai (nešiojamieji kompiuteriai / staliniai kompiuteriai, 992 tapikseliųškų ir didesni)
+@media only screen and (min-width: 992px)
+
+Ypač dideli įrenginiai (dideli nešiojamieji kompiuteriai ir staliniai kompiuteriai, 1 200 pikselių ir didesni)
+@media only screen and (min-width: 1280px) 
+*/
