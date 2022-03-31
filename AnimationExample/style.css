@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.block {
+  width: calc(33.33333% - 2.5em);
+  margin: 2rem;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.block a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  top: 0;
+  left: 0;
+}
+
+.block h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin: 0;
+  z-index: 2;
+}
+.block .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.item-1 .background {
+  background-color: #f2849e;
+}
+
+.item-2 .background {
+  background-color: #7ecaf6;
+}
+
+.item-3 .background {
+  background-color: #7bd0c1;
+}
+
+.background {
+  position: absolute;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: ease 0.5s;
+}
+
+.background img {
+  opacity: 0.25;
+}
+
+.image img {
+  transition: ease 0.5s;
+  width: 100%;
+}
+
+.block:hover img {
+  transform: scale(1.1);
+}
+
+.content {
+  transition: ease 0.5s;
+  max-height: 0;
+  opacity: 0;
+  width: 75%;
+}
+
+.block:hover .background {
+  transform: scale(1.1);
+  opacity: 0;
+  z-index: 0;
+}
+
+.block:hover .content {
+  max-height: 15rem;
+  opacity: 1;
+}
+
+.block:hover .background img {
+  opacity: 0;
+}

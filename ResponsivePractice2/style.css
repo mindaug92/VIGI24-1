@@ -1,0 +1,125 @@
+/* 
+Ypač maži įrenginiai (telefonai, 600 pikselių ir žemesni) 
+@media only screen and (max-width: 600px)
+
+Maži įrenginiai (planšetiniai kompiuteriai ir dideli telefonai, 600 pikselių ir daugiau)
+@media only screen and (min-width: 600px)
+
+Vidutiniai įrenginiai (kraštovaizdžio planšetiniai kompiuteriai, 768 pikselių ir didesni)
+@media only screen and (min-width: 768px)
+
+Dideli įrenginiai (nešiojamieji kompiuteriai / staliniai kompiuteriai, 992 tapikseliųškų ir didesni)
+@media only screen and (min-width: 992px)
+
+Ypač dideli įrenginiai (dideli nešiojamieji kompiuteriai ir staliniai kompiuteriai, 1 200 pikselių ir didesni)
+@media only screen and (min-width: 1280px) 
+*/
+
+#item,
+#item-2,
+#item-3,
+#item-4 {
+  display: flex;
+}
+
+.item-photo {
+  flex: 1;
+  margin: 1rem;
+}
+
+.item-label {
+  flex: 2;
+}
+
+#item .item-photo {
+  background-color: rgb(0, 139, 139);
+}
+
+#item-2 .item-photo {
+  background-color: rgb(173, 255, 47);
+}
+
+#item-3 .item-photo {
+  background-color: rgb(255, 165, 0);
+}
+
+#item-4 .item-photo {
+  background-color: rgb(156, 1, 97);
+}
+
+.ad {
+  display: flex;
+  align-items: center;
+  background-color: rgb(170, 170, 170);
+  font-size: 0.5rem;
+}
+
+.ad img {
+  max-height: 8rem;
+  flex-basis: 55%;
+}
+.ad p {
+  flex-basis: 45%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav img {
+  max-width: 3rem;
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgb(92, 92, 92);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer h3 {
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  #item,
+  #item-2,
+  #item-3,
+  #item-4 {
+    flex-direction: column;
+  }
+
+  .item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2rem 1rem;
+  }
+
+  .item-container .item {
+    width: 45%;
+  }
+
+  .item-photo {
+    min-height: 6rem;
+    margin: 0;
+  }
+
+  .ad {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .item-container .item {
+    width: 20%;
+  }
+
+  .ad {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,54 @@
+.bg-green {
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+
+@mixin bg-green-custom-font($font-size) {
+  @extend .bg-green;
+  font-size: $font-size;
+}
+
+@mixin bg-green-custom-color-font($color, $font-size) {
+  @include bg-green-custom-font($font-size);
+  color: $color;
+}
+
+.bg-green-larger-font {
+  @include bg-green-custom-font(2rem);
+}
+
+.bg-green-small-font {
+  @include bg-green-custom-font(0.5rem);
+}
+
+.bg-green-small-red-font {
+  @include bg-green-custom-color-font(red, 5rem);
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.block {
+  margin: 1rem;
+  height: 20rem;
+  max-width: 30rem;
+  width: 100%;
+  min-width: 10rem;
+}
+.container {
+  background-color: yellow;
+  padding: 1rem;
+  height: 100rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+}

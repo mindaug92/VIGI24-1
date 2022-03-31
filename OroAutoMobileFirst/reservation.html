@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Automobiliu nuoma</title>
     <link
       rel="stylesheet"
@@ -10,7 +11,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/reservation.css" />
   </head>
   <body>
     <header>
@@ -19,10 +21,12 @@
           <span id="pavadinimas">UAB "OroAuto"</span>
         </div>
         <div class="nav-items">
-          <a href="http://127.0.0.1:5500/OroAuto/reservation.html"
+          <a href="http://127.0.0.1:5500/OroAutoMobileFirst/reservation.html"
             >Rezervacija</a
           >
-          <a href="http://127.0.0.1:5500/OroAuto/index.html">Automobiliai</a>
+          <a href="http://127.0.0.1:5500/OroAutoMobileFirst/index.html"
+            >Automobiliai</a
+          >
           <a href="#">Apie mus</a>
           <a href="#">Kontaktai</a>
         </div>
@@ -178,8 +182,8 @@
                 type="range"
                 name="days"
                 id="days"
-                value="0"
-                min="0"
+                value="1"
+                min="1"
                 max="20"
                 step="1"
               />
