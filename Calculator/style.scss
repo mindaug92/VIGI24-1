@@ -1,0 +1,17 @@
+.calculator {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 15rem;
+  input {
+    width: 100%;
+    text-align: right;
+  }
+
+  button {
+    width: 25%;
+  }
+
+  button:nth-child(14) {
+    width: 75%;
+  }
+}
