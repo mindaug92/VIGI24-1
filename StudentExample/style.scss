@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 10rem;
+  width: 75%;
+
+  form {
+    margin: 2rem auto;
+    width: 30%;
+  }
+}
