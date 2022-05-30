@@ -1,0 +1,412 @@
+{
+	"info": {
+		"_postman_id": "ad4d9db6-9344-4a29-aa02-c6a560ff51e9",
+		"name": "VIGI24",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6765997"
+	},
+	"item": [
+		{
+			"name": "JS-21",
+			"item": [
+				{
+					"name": "get random user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "https://randomuser.me/api/",
+							"protocol": "https",
+							"host": [
+								"randomuser",
+								"me"
+							],
+							"path": [
+								"api",
+								""
+							]
+						},
+						"description": "Solution for task number 1"
+					},
+					"response": []
+				},
+				{
+					"name": "get party attendance list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://boiling-reaches-93648.herokuapp.com/week-3/:eventType",
+							"protocol": "https",
+							"host": [
+								"boiling-reaches-93648",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"week-3",
+								":eventType"
+							],
+							"variable": [
+								{
+									"key": "eventType",
+									"value": "party"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get wedding attendance list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://boiling-reaches-93648.herokuapp.com/week-3/:eventType",
+							"protocol": "https",
+							"host": [
+								"boiling-reaches-93648",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"week-3",
+								":eventType"
+							],
+							"variable": [
+								{
+									"key": "eventType",
+									"value": "wedding"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "JS-22",
+			"item": [
+				{
+					"name": "get persons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://magnetic-melon-yam.glitch.me",
+							"protocol": "https",
+							"host": [
+								"magnetic-melon-yam",
+								"glitch",
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "JS-23",
+			"item": [
+				{
+					"name": "get car list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olive-bead-glazer.glitch.me",
+							"protocol": "https",
+							"host": [
+								"olive-bead-glazer",
+								"glitch",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add car",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"brand\": \"Opel\",\n    \"model\": \"Astra\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://olive-bead-glazer.glitch.me",
+							"protocol": "https",
+							"host": [
+								"olive-bead-glazer",
+								"glitch",
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "JS-24",
+			"item": [
+				{
+					"name": "get property list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://robust-safe-crafter.glitch.me/",
+							"protocol": "https",
+							"host": [
+								"robust-safe-crafter",
+								"glitch",
+								"me"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add new property",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"image\": \"https://s1.15min.lt/images/photos/2020/02/05/original/vilniaus-pilies-g-parduodamas-10-kv-m-ploto-butas-5e3ad52eee51a.jpg\",\n        \"city\": \"Rokiškis\",\n        \"price\": 10000,\n        \"description\": \"One of the smallest flats in the very city centre of Rokiškis full of action and attraction.\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://robust-safe-crafter.glitch.me/",
+							"protocol": "https",
+							"host": [
+								"robust-safe-crafter",
+								"glitch",
+								"me"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "JS-25",
+			"item": [
+				{
+					"name": "get product list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://golden-whispering-show.glitch.me",
+							"protocol": "https",
+							"host": [
+								"golden-whispering-show",
+								"glitch",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add new product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"image\": \"https://pagrindinis.barbora.lt/api/images/GetInventoryImage?id=d0fb9982-06e1-469d-ae79-e7efd69c59a1\",\n    \"title\": \"Estrella traškučiai\",\n    \"price\": 2.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://golden-whispering-show.glitch.me",
+							"protocol": "https",
+							"host": [
+								"golden-whispering-show",
+								"glitch",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://golden-whispering-show.glitch.me/:id",
+							"protocol": "https",
+							"host": [
+								"golden-whispering-show",
+								"glitch",
+								"me"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1",
+									"description": "product id to delete"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "JS-26",
+			"item": [
+				{
+					"name": "get experiences",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://zany-skitter-caper.glitch.me/experiences",
+							"protocol": "https",
+							"host": [
+								"zany-skitter-caper",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"experiences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get skills",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://zany-skitter-caper.glitch.me/skills?title=JavaScript&level=20",
+							"protocol": "https",
+							"host": [
+								"zany-skitter-caper",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"skills"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "JavaScript"
+								},
+								{
+									"key": "level",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add experience",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"companyName\": \"Microsoft\",\n    \"position\": \"Developer\",\n    \"description\": \"Working on multiple projects including but not limited to Teams, Office 365 and Azure\",\n    \"startYear\": 2013,\n    \"finishYear\": 2015\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://zany-skitter-caper.glitch.me/experiences",
+							"protocol": "https",
+							"host": [
+								"zany-skitter-caper",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"experiences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add skills",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"TypeScript\",\n    \"level\": 20\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://zany-skitter-caper.glitch.me/skills",
+							"protocol": "https",
+							"host": [
+								"zany-skitter-caper",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"skills"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
